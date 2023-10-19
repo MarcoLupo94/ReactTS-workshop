@@ -17,6 +17,19 @@
 6. `npm run dev` To start your App! 🚀
 
 
+# What will we learn
+
+- **Quick Intro to React**
+- **Repository structure** : ReadMe, package.json, bundler, formatters & linter, src/app.
+- **Simple State Management with react** : what is the state object in react
+- **HTTP requests**: I will explain how to use HTTP requests to fetch data from a server and integrate it into the application.
+- **Queries**: A query string commonly includes fields added to a base URL by a Web browser or other client application `https://example.com/over/there?name=ferret`
+- **Promises**: I will cover the concept of promises and how they can be used to handle asynchronous operations in JavaScript.
+- **Async/Await**: I will demonstrate how to handle asynchronous operations using async/await syntax, which simplifies working with promises and makes code more readable.
+- **APIs and Data modelling with Typescript.**
+- **Fetching data** with JS `fetch`
+- **Try/Catch blocks**: for error handling inside your logic.
+
 
 
 
