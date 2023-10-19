@@ -7,16 +7,15 @@ export interface Currency {
   rate: number;
 }
 
+const { BASE_URL } = import.meta.env.VITE_BASE_URL;
+const { API_KEY } = import.meta.env.VITE_API_KEY;
+
 function App() {
   const [topCurrency, setTopCurrency] = useState<Currency>({ name: 'USD', rate: 0 });
   const [bottomCurrency, setBottomCurrency] = useState<Currency>({ name: 'USD', rate: 0 });
 
   useEffect(() => {
-    fetch(
-      `http://api.exchangeratesapi.io/latest?base=${topCurrency.name}&access_key=${
-        import.meta.env.VITE_API_KEY
-      }`
-    );
+    fetch(`${BASE_URL}latest?base=${topCurrency.name}&access_key=${API_KEY}`);
   }, [topCurrency]);
 
   return (
