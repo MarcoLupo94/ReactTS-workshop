@@ -1,3 +1,7 @@
+### Requirements
+We will create a simple App to convert currencies in real time, using a free public API.
+
+
 # Requirements
 
 1. Basic knowledge `Html`, `CSS`, `Javascript/TypeScript`.
