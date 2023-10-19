@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Currency } from '../App';
+import { availableCurrencies } from '../utils/currencies';
 
 interface CurrencyFormProps {
   currency: Currency;
@@ -19,9 +20,9 @@ export const CurrencyForm: FC<CurrencyFormProps> = ({ currency, setCurrency }) =
     <div>
       <input type="number" onChange={handleRateChange} />
       <select onChange={handleNameChange}>
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="GBP">GBP</option>
+        {availableCurrencies.map((currency) => (
+          <option value={currency}>{currency}</option>
+        ))}
       </select>
     </div>
   );

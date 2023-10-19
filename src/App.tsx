@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import { CurrencyForm } from './components/CurrencyForm';
 
@@ -10,6 +10,14 @@ export interface Currency {
 function App() {
   const [topCurrency, setTopCurrency] = useState<Currency>({ name: 'USD', rate: 0 });
   const [bottomCurrency, setBottomCurrency] = useState<Currency>({ name: 'USD', rate: 0 });
+
+  useEffect(() => {
+    fetch(
+      `http://api.exchangeratesapi.io/latest?base=${topCurrency.name}&access_key=${
+        import.meta.env.VITE_API_KEY
+      }`
+    );
+  }, [topCurrency]);
 
   return (
     <div
