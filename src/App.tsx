@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { CurrencyForm } from './components/CurrencyForm';
+import { currencies } from './utils/currencies';
 
 export interface Currency {
   name: string;
@@ -27,7 +28,7 @@ function App() {
       .then((response) => {
         setBottomCurrency({
           ...bottomCurrency,
-          rate: (response.data[bottomCurrency.name] * topCurrency.rate).toFixed(2)
+          rate: Number((response.data[bottomCurrency.name] * topCurrency.rate).toFixed(2))
         });
       });
     // WHAT HAPPENS IF THERE IS AN ERROR?
@@ -48,10 +49,11 @@ function App() {
       }}>
       <div>
         <p style={{ textAlign: 'left' }}>
-          {topCurrency.rate} {topCurrency.name} equals
+          {topCurrency.rate} {currencies[topCurrency.name]} equals
         </p>
         <h1 style={{ marginTop: 0, textAlign: 'left' }}>
-          {bottomCurrency.rate} <span style={{ fontSize: '20px' }}>{bottomCurrency.name}</span>
+          {bottomCurrency.rate}{' '}
+          <span style={{ fontSize: '20px' }}>{currencies[bottomCurrency.name]}</span>
         </h1>
       </div>
       <CurrencyForm currency={topCurrency} setCurrency={setTopCurrency} />
