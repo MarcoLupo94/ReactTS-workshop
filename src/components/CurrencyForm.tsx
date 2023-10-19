@@ -22,12 +22,16 @@ export const CurrencyForm: FC<CurrencyFormProps> = ({
   fetchCurrencyRate
 }) => {
   const handleNameChange = (event: { target: { value: string } }) => {
+    //When user changes the type of currency, we want to update the currency name in state
     setCurrency({ ...currency, name: event.target.value });
+    // Then we want to fetch the rate of the currency we want to convert to
     fetchCurrencyRate({ ...currency, name: event.target.value }, currency2, setCurrency2);
   };
 
   const handleRateChange = (event: { target: { value: string } }) => {
+    //When user changes the rate, we want to update the rate in state
     setCurrency({ ...currency, rate: parseFloat(event.target.value) });
+    // Then we want to fetch the rate of the currency we want to convert to
     fetchCurrencyRate(
       { ...currency, rate: parseFloat(event.target.value) },
       currency2,
@@ -48,6 +52,7 @@ export const CurrencyForm: FC<CurrencyFormProps> = ({
         style={{ height: '50px', width: '100px', fontSize: '16px' }}
         value={currency.name}
         onChange={handleNameChange}>
+        {/* We want to return an array of option elements given our currencies array(check Array.map() documentation on MDN)*/}
         {availableCurrencies.map((currency) => (
           <option value={currency}>{currency}</option>
         ))}

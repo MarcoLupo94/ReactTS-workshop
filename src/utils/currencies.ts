@@ -1,3 +1,10 @@
+/*
+EXERCISE :
+Here we have predefined currencies that we can use in our app.
+Alternatively we could fetch all the available currencies from the API
+https://freecurrencyapi.com/docs/currencies => READ DOCUMENTATION
+ */
+
 export const currencies: { [key: string]: string } = {
   EUR: 'Euro',
   USD: 'US Dollar',
