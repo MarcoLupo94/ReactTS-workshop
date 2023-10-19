@@ -29,7 +29,7 @@ We will create a simple Web App to convert currencies in real time, using a free
 1. Fork this repository.
 2. Clone it on your local machine.
 3. `cd ReactTS-workshop`.
-4. `git checkout start`
+4. `git checkout main`
 5. `npm i` install the necessary packages.
 6. `npm run dev` To start your App! 🚀
 
