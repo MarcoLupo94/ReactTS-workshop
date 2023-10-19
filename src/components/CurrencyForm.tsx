@@ -18,8 +18,8 @@ export const CurrencyForm: FC<CurrencyFormProps> = ({ currency, setCurrency }) =
 
   return (
     <div>
-      <input type="number" onChange={handleRateChange} />
-      <select onChange={handleNameChange}>
+      <input type="number" value={currency.rate} onChange={handleRateChange} />
+      <select value={currency.name} onChange={handleNameChange}>
         {availableCurrencies.map((currency) => (
           <option value={currency}>{currency}</option>
         ))}
