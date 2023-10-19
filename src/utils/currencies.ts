@@ -1,4 +1,4 @@
-export const currencies = {
+export const currencies: { [key: string]: string } = {
   EUR: 'Euro',
   USD: 'US Dollar',
   JPY: 'Japanese Yen',
