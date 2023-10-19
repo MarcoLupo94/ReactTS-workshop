@@ -5,6 +5,7 @@
 3. NodeJs & npm installed on your machine: [package-manager](https://nodejs.org/en/download/package-manager) | [download](https://nodejs.org/en/download) | [detailed-guide](https://www.theodinproject.com/lessons/foundations-installing-node-js)
 4. Git [installation-guide(MAC/Linux)](https://www.theodinproject.com/lessons/foundations-setting-up-git) | [Windows](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#:~:text=Installing%20on%20Windows)
 5. API key for exchange rates. [Register](https://exchangeratesapi.io/)
+6. Nice to have basic understanding of React. [DOCS](https://react.dev/learn)
 
 
 # Getting started
