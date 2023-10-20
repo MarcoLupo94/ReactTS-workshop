@@ -34,8 +34,7 @@ We will create a simple Web App to convert currencies in real time, using a free
 6. `npm run dev` To start your App! 🚀
 
 
-
-
-
-
+# EXERCISES
+You will find exercises in the code to practice your skills.
+Simply checkout to the final results branch `git checkout end`, read the comments starting with EXERCISES and practice your knowledge.
 
