@@ -13,6 +13,9 @@ export interface Currency {
 const BASE_URL = import.meta.env.VITE_API_URL;
 const API_KEY = import.meta.env.VITE_API_KEY;
 
+/*
+  EXERCISE: Can you add some functionality to your app? Checkout the Api documentation here: https://freecurrencyapi.com/docs/
+*/
 function App() {
   const [topCurrency, setTopCurrency] = useState<Currency>({ name: 'USD', rate: 0 });
   const [bottomCurrency, setBottomCurrency] = useState<Currency>({ name: 'USD', rate: 0 });
@@ -41,7 +44,9 @@ function App() {
   }, [topCurrency])
   */
 
-  //IF WE WANT TO HANDLE BOTH CURRENCIES CHANGING, WE CAN USE THIS:
+  /*IF WE WANT TO HANDLE BOTH CURRENCIES CHANGING, WE CAN USE THIS:
+  EXERCISE:  Can you abstract this logic into a different module/file? So we can have a cleaner App.tsx file
+*/
   async function fetchCurrencyRate(
     fromCurrency: Currency, //Currency we want to convert from
     toCurrency: Currency, // Currency we want to convert to
@@ -70,6 +75,9 @@ function App() {
     }
   }
 
+  /*EXERCISE: Can you make this look better?
+  Hints: Abstract the inline Css logic in to the CSS file with classes and improve the look of it/ make it responsive to different screen sizes
+  */
   return (
     <div
       style={{

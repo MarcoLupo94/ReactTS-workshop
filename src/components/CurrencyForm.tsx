@@ -39,6 +39,9 @@ export const CurrencyForm: FC<CurrencyFormProps> = ({
     );
   };
 
+  /*EXERCISE: Can you make this look better?
+  Hints: Abstract the inline Css logic in to the CSS file with classes and improve the look of it/ make it responsive to different screen sizes
+  */
   return (
     <div>
       <input

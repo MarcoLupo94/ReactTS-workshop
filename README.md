@@ -4,7 +4,7 @@
 2. Basic terminal knowledge and terminal installed on your machine. [my-terminal](https://www.warp.dev/)
 3. NodeJs & npm installed on your machine: [package-manager](https://nodejs.org/en/download/package-manager) | [download](https://nodejs.org/en/download) | [detailed-guide](https://www.theodinproject.com/lessons/foundations-installing-node-js)
 4. Git [installation-guide(MAC/Linux)](https://www.theodinproject.com/lessons/foundations-setting-up-git) | [Windows](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#:~:text=Installing%20on%20Windows)
-5. API key for exchange rates. [Register](https://exchangeratesapi.io/)
+5. API key for exchange rates. [Register](https://freecurrencyapi.com/)
 6. Nice to have basic understanding of React. [DOCS](https://react.dev/learn)
 
 
@@ -32,5 +32,7 @@
 - **Try/Catch blocks**: for error handling inside your logic.
 
 
-
+# EXERCISES
+You will find exercises in the code to practice your skills.
+Simply checkout to the final results branch `git checkout end`, read the comments starting with EXERCISES and practice your knowledge.
 
